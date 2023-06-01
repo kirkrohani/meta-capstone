@@ -1,4 +1,4 @@
-import { Box, HStack } from "@chakra-ui/react";
+import { Box, HStack, ListItem, UnorderedList } from "@chakra-ui/react";
 import {
   faGithub,
   faLinkedin,
@@ -72,14 +72,17 @@ const Header = () => {
           >
             <img src={logo} alt="little lemon logo" width="250" />
             <nav>
-              <HStack spacing={8}>
-                <LinkWithIcon url={"/#home-section"} render={"Home"} onclick={() => { handleClick("home") }} />
-                <LinkWithIcon url={"/#contactme-section"} render={"About"} onclick={() => {handleClick("contactme")}} />
-                <LinkWithIcon url={"/#contactme-section"} render={"Menu"} onclick={() => {handleClick("contactme")}} />
-                <LinkWithIcon url={"/#contactme-section"} render={"Reservations"} onclick={() => {handleClick("contactme")}} />
-                <LinkWithIcon url={"/#contactme-section"} render={"Order Online"} onclick={() => {handleClick("contactme")}} />
-                <LinkWithIcon url={"/#contactme-section"} render={"Login"} onclick={() => {handleClick("contactme")}} />
-              </HStack>
+              <UnorderedList styleType="none">
+                <HStack spacing={8}>
+                  <ListItem><LinkWithIcon url={"/#home-section"} render={"Home"} onclick={() => { handleClick("home") }} /></ListItem>
+                  <ListItem><LinkWithIcon url={"/#contactme-section"} render={"About"} onclick={() => {handleClick("contactme")}} /></ListItem>
+                  <ListItem> <LinkWithIcon url={"/#contactme-section"} render={"Menu"} onclick={() => {handleClick("contactme")}} /></ListItem>
+                  <ListItem><LinkWithIcon url={"/#contactme-section"} render={"Reservations"} onclick={() => {handleClick("contactme")}} /></ListItem>
+                  <ListItem><LinkWithIcon url={"/#contactme-section"} render={"Order Online"} onclick={() => {handleClick("contactme")}} /></ListItem>
+                  <ListItem><LinkWithIcon url={"/#contactme-section"} render={"Login"} onclick={() => {handleClick("contactme")}} /></ListItem>
+                </HStack>  
+              </UnorderedList>
+
             </nav>
           </HStack>
         </Box>
