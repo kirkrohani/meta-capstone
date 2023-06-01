@@ -50,42 +50,44 @@ const Header = () => {
   };
 
   return (
-    <Box
-      position="fixed"
-      top={0}
-      left={0}
-      right={0}
-      translateY={0}
-      transitionProperty="transform"
-      transitionDuration=".3s"
-      transitionTimingFunction="ease-in-out"
-      backgroundColor="#18181b"
-    >
-      <Box color="white" maxWidth="1280px" margin="0 auto">
-        <HStack
-          px={16}
-          py={4}
-          justifyContent="space-between"
-          alignItems="center"
-        >
-          <nav>
-            {/* Add social media links based on the `socials` data */}
-            <HStack px={16} py={0} justifyContent="space-between" spacing="4">
-              {socials.map(
-                social => <LinkWithIcon key={social.url}  url={social.url} render={<FontAwesomeIcon icon={social.icon} size="1x" />} />
-              )}
-            </HStack>
-          </nav>
-          <nav>
-            <HStack spacing={8}>
-              {/* Add links to Projects and Contact me section */}
-              <LinkWithIcon url={"/#projects-section"} render={"Projects"} onclick={() => { handleClick("projects") }} />
-              <LinkWithIcon url={"/#contactme-section"} render={"Contact Me"} onclick={() => {handleClick("contactme")}} />
-            </HStack>
-          </nav>
-        </HStack>
+    <header>
+      <Box
+        position="fixed"
+        top={0}
+        left={0}
+        right={0}
+        translateY={0}
+        transitionProperty="transform"
+        transitionDuration=".3s"
+        transitionTimingFunction="ease-in-out"
+        backgroundColor="#18181b"
+      >
+        <Box color="white" maxWidth="1280px" margin="0 auto">
+          <HStack
+            px={16}
+            py={4}
+            justifyContent="space-between"
+            alignItems="center"
+          >
+            <nav>
+              {/* Add social media links based on the `socials` data */}
+              <HStack px={16} py={0} justifyContent="space-between" spacing="4">
+                {socials.map(
+                  social => <LinkWithIcon key={social.url}  url={social.url} render={<FontAwesomeIcon icon={social.icon} size="1x" />} />
+                )}
+              </HStack>
+            </nav>
+            <nav>
+              <HStack spacing={8}>
+                {/* Add links to Projects and Contact me section */}
+                <LinkWithIcon url={"/#projects-section"} render={"Projects"} onclick={() => { handleClick("projects") }} />
+                <LinkWithIcon url={"/#contactme-section"} render={"Contact Me"} onclick={() => {handleClick("contactme")}} />
+              </HStack>
+            </nav>
+          </HStack>
+        </Box>
       </Box>
-    </Box>
+    </header>
   );
 };
 export default Header;

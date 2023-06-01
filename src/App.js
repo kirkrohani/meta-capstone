@@ -1,11 +1,13 @@
+import AboutSection from "./components/AboutSection";
+import Alert from "./components/Alert";
+import { AlertProvider } from "./context/alertContext";
+import BannerSection from "./components/BannerSection";
 import { ChakraProvider } from "@chakra-ui/react";
-import Header from "./components/Header";
-import LandingSection from "./components/LandingSection";
-import ProjectsSection from "./components/ProjectsSection";
 import ContactMeSection from "./components/ContactMeSection";
 import Footer from "./components/Footer";
-import { AlertProvider } from "./context/alertContext";
-import Alert from "./components/Alert";
+import Header from "./components/Header";
+import SpecialsSection from "./components/SpecialsSection";
+import TestimonialsSection from "./components/TestimonialsSection";
 
 function App() {
   return (
@@ -13,8 +15,10 @@ function App() {
       <AlertProvider>
         <main>
           <Header />
-          <LandingSection />
-          <ProjectsSection />
+          <BannerSection />
+          <SpecialsSection />
+          <TestimonialsSection />
+          <AboutSection />
           <ContactMeSection />
           <Footer />
           <Alert />

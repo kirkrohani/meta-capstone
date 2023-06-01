@@ -31,7 +31,7 @@ const projects = [
   },
 ];
 
-const ProjectsSection = () => {
+const TestimonialsSection = () => {
   return (
     <FullScreenSection
       backgroundColor="#14532d"
@@ -41,7 +41,7 @@ const ProjectsSection = () => {
       spacing={8}
     >
       <Heading as="h1" id="projects-section">
-        Featured Projects
+        Testimonials
       </Heading>
       <Box
         display="grid"
@@ -62,4 +62,4 @@ const ProjectsSection = () => {
   );
 };
 
-export default ProjectsSection;
+export default TestimonialsSection;
