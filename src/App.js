@@ -1,13 +1,14 @@
-import AboutSection from "./components/AboutSection";
-import Alert from "./components/Alert";
+import { Route, Routes } from "react-router-dom";
+
 import { AlertProvider } from "./context/alertContext";
-import BannerSection from "./components/BannerSection";
 import { ChakraProvider } from "@chakra-ui/react";
-import ContactMeSection from "./components/ContactMeSection";
 import Footer from "./components/Footer";
-import Header from "./components/Header";
-import SpecialsSection from "./components/SpecialsSection";
-import TestimonialsSection from "./components/TestimonialsSection";
+import Header from "./components/Header/Header";
+import HomePage from "./pages/HomePage";
+import LoginPage from './pages/LoginPage'
+import MenuPage from './pages/MenuPage';
+import OrderOnlinePage from './pages/OrderOnlinePage'
+import ReservationsPage from './pages/ReservationsPage'
 
 function App() {
   return (
@@ -15,15 +16,16 @@ function App() {
       <AlertProvider>
         <main id="home-section">
           <Header />
-          <BannerSection />
-          <SpecialsSection />
-          <TestimonialsSection />
-          <AboutSection />
-          <ContactMeSection />
+          <Routes>
+            <Route path="/"  element={<HomePage />} />
+            <Route path="/menu" element={<MenuPage />} />
+            <Route path="/reservations"  element={<ReservationsPage />} />
+            <Route path="/order-online" element={<OrderOnlinePage />} />
+            <Route path="/login"  element={<LoginPage />} />
+          </Routes>
           <Footer />
-          <Alert />
         </main>
-      </AlertProvider>
+        </AlertProvider>
     </ChakraProvider>
   );
 }
