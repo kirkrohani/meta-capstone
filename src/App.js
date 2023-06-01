@@ -13,7 +13,7 @@ function App() {
   return (
     <ChakraProvider>
       <AlertProvider>
-        <main>
+        <main id="home-section">
           <Header />
           <BannerSection />
           <SpecialsSection />

@@ -10,6 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import LinkWithIcon from './LinkWithIcon';
 import React from "react";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import logo from '../images/Logo .svg';
 
 const socials = [
   {
@@ -60,28 +61,24 @@ const Header = () => {
         transitionProperty="transform"
         transitionDuration=".3s"
         transitionTimingFunction="ease-in-out"
-        backgroundColor="#18181b"
+        backgroundColor="#FFFFFF"
       >
-        <Box color="white" maxWidth="1280px" margin="0 auto">
+        <Box color="black" maxWidth="1280px" margin="0 auto">
           <HStack
             px={16}
-            py={4}
+            py={12}
             justifyContent="space-between"
             alignItems="center"
           >
-            <nav>
-              {/* Add social media links based on the `socials` data */}
-              <HStack px={16} py={0} justifyContent="space-between" spacing="4">
-                {socials.map(
-                  social => <LinkWithIcon key={social.url}  url={social.url} render={<FontAwesomeIcon icon={social.icon} size="1x" />} />
-                )}
-              </HStack>
-            </nav>
+            <img src={logo} alt="little lemon logo" width="250" />
             <nav>
               <HStack spacing={8}>
-                {/* Add links to Projects and Contact me section */}
-                <LinkWithIcon url={"/#projects-section"} render={"Projects"} onclick={() => { handleClick("projects") }} />
-                <LinkWithIcon url={"/#contactme-section"} render={"Contact Me"} onclick={() => {handleClick("contactme")}} />
+                <LinkWithIcon url={"/#home-section"} render={"Home"} onclick={() => { handleClick("home") }} />
+                <LinkWithIcon url={"/#contactme-section"} render={"About"} onclick={() => {handleClick("contactme")}} />
+                <LinkWithIcon url={"/#contactme-section"} render={"Menu"} onclick={() => {handleClick("contactme")}} />
+                <LinkWithIcon url={"/#contactme-section"} render={"Reservations"} onclick={() => {handleClick("contactme")}} />
+                <LinkWithIcon url={"/#contactme-section"} render={"Order Online"} onclick={() => {handleClick("contactme")}} />
+                <LinkWithIcon url={"/#contactme-section"} render={"Login"} onclick={() => {handleClick("contactme")}} />
               </HStack>
             </nav>
           </HStack>
