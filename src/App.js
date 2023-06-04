@@ -1,10 +1,12 @@
+import './index.css';
+
 import { Route, Routes } from "react-router-dom";
 
 import { AlertProvider } from "./context/alertContext";
 import { ChakraProvider } from "@chakra-ui/react";
 import Footer from "./components/Footer";
 import Header from "./components/Header/Header";
-import HomePage from "./pages/HomePage";
+import HomePage from "./pages/Home/HomePage";
 import LoginPage from './pages/LoginPage'
 import MenuPage from './pages/MenuPage';
 import OrderOnlinePage from './pages/OrderOnlinePage'
@@ -14,7 +16,7 @@ function App() {
   return (
     <ChakraProvider>
       <AlertProvider>
-        <main id="home-section">
+        <main id="app">
           <Header />
           <Routes>
             <Route path="/"  element={<HomePage />} />

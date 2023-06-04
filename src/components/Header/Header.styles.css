@@ -13,6 +13,7 @@
     display: flex;
     justify-content:space-between;
     align-items: center;
+    padding: 25px;
   }
 
   nav {
@@ -38,6 +39,7 @@
     text-decoration: none;
   }
 
+/* mobile device media*/
 @media (max-width: 480px) {
   header {
     display: flex;

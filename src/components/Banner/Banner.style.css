@@ -1,0 +1,52 @@
+#banner-section {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  background-color: #495E57;
+  font-family: 'Meraki Text';
+  max-height: 500px;
+  padding: 25px;
+}
+
+#banner-section .banner-leftside h1 {
+  font-size: 64pt;
+  line-height: 64px;
+  color: #F4CE14;
+  padding-top: 20px;
+}
+
+#banner-section .banner-leftside h2 {
+  font-size: 40pt;
+  line-height: 40px;
+  color: #FFFFFF;
+  padding-top: 5px;
+}
+
+#banner-section .banner-leftside p {
+  font-size: 18pt;
+  line-height: 18px;
+  color: #FFFFFF;
+  max-width: 300px;
+  padding: 30px 0 50px 0;
+}
+
+#banner-section .banner-rightside img {
+  width: 550px;
+  height: 600px;
+  border-radius: 3%;
+}
+
+
+@media (max-width: 480px) {
+  #banner-section {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    max-height: 1300px;
+  }
+
+  #banner-section .banner-rightside {
+    margin-top: 50px;
+  }
+
+}
