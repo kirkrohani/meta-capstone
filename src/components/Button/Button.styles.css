@@ -1,4 +1,4 @@
-.reserveTableButton {
+.standardButton {
   border: solid 1px #F4CE14;
   background-color: #F4CE14;
   color: #000000;
@@ -8,9 +8,11 @@
   border-radius: 15rem;
 }
 
-.reserveTableButton:hover {
+.standardButton:hover {
     background-color: #495E57;
     border: solid 1px #FFFFFF;
     color: #FFFFFF;
 }
+
+
 

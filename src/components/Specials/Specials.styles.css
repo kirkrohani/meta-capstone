@@ -1,0 +1,83 @@
+#specials-section {
+  min-height: 1000px;
+  display: flex;
+  flex-direction:  column;
+  width: 68%;
+  margin: 0 auto;
+  padding: 200px 0;
+}
+
+#specials-section .specialsTopDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+#specials-section .specialsBottomDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  padding: 50px 0;
+}
+
+#specials-section .specialsBottomDiv .special {
+  border-radius: 3rem;
+  min-height: 750px;
+  max-width: 425px;
+  border: solid 1px black;
+  background-color: #EDEFEE;
+}
+
+#specials-section .specialsBottomDiv .special img {
+  border-radius: 3rem;
+}
+
+#specials-section .specialsBottomDiv .special .line1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+#specials-section .specialsBottomDiv .special .specialName {
+  font-family: "Karla";
+  font-size: 16pt;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+#specials-section .specialsBottomDiv .special .specialPrice {
+  color: #EE9972;
+  font-size: 16px;
+}
+
+#specials-section .specialsBottomDiv .special .specialDesc {
+  padding: 25px;
+  font-family: 'Karla';
+  font-size: 15pt;
+  line-height: 1;
+}
+
+#specials-section .specialsTopDiv h1 {
+  font-family: 'Meraki Text';
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  #specials-section {
+    width: 100%;
+    padding: 50px 0;
+  }
+
+  #specials-section .specialsBottomDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+  }
+
+  #specials-section .specialsBottomDiv .special {
+    max-width: 350px;
+    margin: 25px auto;
+  }
+}
