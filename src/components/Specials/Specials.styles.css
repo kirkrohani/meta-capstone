@@ -29,7 +29,8 @@
 }
 
 #specials-section .specialsBottomDiv .special .specialImage {
-  border-radius: 3rem;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
   width: 100%;
   max-height: 282px;
 }

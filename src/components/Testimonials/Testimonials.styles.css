@@ -1,0 +1,76 @@
+#testimonials-section {
+  min-height: 1000px;
+  display: flex;
+  flex-direction:  column;
+  width: 68%;
+  margin: 0 auto;
+  padding: 200px 0;
+}
+
+#testimonials-section .testimonialsTopDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+}
+
+#testimonials-section .testimonialsBottomDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  padding: 50px 0;
+}
+
+#testimonials-section .testimonialsBottomDiv .testimonial {
+  border: solid 1px black;
+  width: 320px;
+  background-color: #FBDABB;
+  padding: 30px 10px;
+}
+
+#testimonials-section .testimonialsBottomDiv .testimonial .testimonialRating {
+  font-family: 'Karla';
+  font-size: 15pt;
+  font-weight: bold;
+  line-height: 1;
+  color: #333333;
+}
+
+#testimonials-section .testimonialsBottomDiv .testimonial .testimonialImage {
+  width: 200px;
+  padding: 15px 0;
+}
+
+
+#testimonials-section .testimonialsBottomDiv .testimonial .testimonialDesc {
+  padding: 25px 0;
+  font-family: 'Karla';
+  font-size: 15pt;
+  line-height: 1;
+  color: #333333;
+}
+
+
+
+#testimonials-section .testimonialsTopDiv h1 {
+  font-family: 'Meraki Text';
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  #testimonials-section {
+    width: 100%;
+    padding: 50px 0;
+  }
+
+  #testimonials-section .testimonialsBottomDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+  }
+
+  #testimonials-section .testimonialsBottomDiv .testimonial {
+    max-width: 350px;
+    margin: 25px auto;
+  }
+}
