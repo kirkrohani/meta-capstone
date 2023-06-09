@@ -28,8 +28,10 @@
   background-color: #EDEFEE;
 }
 
-#specials-section .specialsBottomDiv .special img {
+#specials-section .specialsBottomDiv .special .specialImage {
   border-radius: 3rem;
+  width: 100%;
+  max-height: 282px;
 }
 
 #specials-section .specialsBottomDiv .special .line1 {
@@ -56,6 +58,19 @@
   font-family: 'Karla';
   font-size: 15pt;
   line-height: 1;
+}
+
+#specials-section .specialsBottomDiv .special .orderADelivery {
+  font-family: 'Karla';
+  font-size: 15pt;
+  font-weight: bold;
+  line-height: 1;
+  padding: 25px;
+}
+
+#specials-section .specialsBottomDiv .special .deliveryImage {
+  display:inline;
+  padding: 0 25px;
 }
 
 #specials-section .specialsTopDiv h1 {

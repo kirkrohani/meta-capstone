@@ -1,11 +1,13 @@
 import './Specials.styles.css';
 
 import Button  from '../Button/Button';
+import DATA from '../../data/specials-data';
 import React from "react";
 import deliveryImage from '../../images/Dish icon.svg';
-import image1 from '../../images/greek salad.jpg';
 
 const SpecialsSection = () => {
+  const imageBaseURL = '../../images/';
+  console.log('DATA: ', DATA);
   return (
       <section id="specials-section">
         <div className="specialsTopDiv">
@@ -13,41 +15,19 @@ const SpecialsSection = () => {
           <Button name="Online Menu" value="Online Menu" style="standardButton" />
         </div>
         <div className="specialsBottomDiv">
-          <div className="special">
-          <img src={image1} alt="special iamge" />
-          <div className="line1">
-            <p className='specialName'>Greek Salad</p>
-            <p className='specialPrice'>$12.99</p>
-            </div>
-            <p className='specialDesc'>description description description description
-              description description description description
-              description description description description
-              description description description description
-            </p>
-            <p className='orderADelivery'>Order a delivery<img src={deliveryImage} alt="delivery image" /></p>
-        </div>
-             <div className="special">
-            <img src={image1} alt="special iamge" />
-            <p>"Greek Salad</p>
-            <p>"$12.99"</p>
-            <p>description description description description
-              description description description description
-              description description description description
-              description description description description
-            </p>
-            <p>order a delivery<img src={deliveryImage} alt="delivery image" /></p>
-        </div>
-             <div className="special">
-            <img src={image1} alt="special iamge" />
-            <p>"Greek Salad</p>
-            <p>"$12.99"</p>
-            <p>description description description description
-              description description description description
-              description description description description
-              description description description description
-            </p>
-            <p>order a delivery<img src={deliveryImage} alt="delivery image" /></p>
-          </div>
+        {DATA.map(specialItem => {
+          return (
+            <div className="special">
+              <img className='specialImage' src={require('../../images/' + specialItem.imageURL)} alt="special iamge" />
+              <div className="line1">
+                <p className='specialName'>{specialItem.name}</p>
+                <p className='specialPrice'>{specialItem.price}</p>
+              </div>
+              <p className='specialDesc'>{specialItem.description}</p>
+              <p className='orderADelivery'>Order a delivery<img className='deliveryImage' src={deliveryImage} alt="delivery image" /></p>
+            </div>);
+          })}
+
         </div>
       </section>
   );
