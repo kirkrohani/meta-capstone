@@ -1,5 +1,4 @@
 #testimonials-section {
-  min-height: 1000px;
   display: flex;
   flex-direction:  column;
   width: 68%;
@@ -55,6 +54,24 @@
   font-family: 'Meraki Text';
   font-size: 20pt;
   font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  #testimonials-section {
+    width: 100%;
+    padding: 50px 0;
+  }
+
+  #testimonials-section .testimonialsBottomDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+  }
+
+  #testimonials-section .testimonialsBottomDiv .testimonial {
+    max-width: 250px;
+    margin: 25px auto;
+  }
 }
 
 @media (max-width: 480px) {

@@ -1,6 +1,6 @@
 import './Home.styles.css';
 
-import AboutSection from "../../components/AboutSection";
+import AboutSection from "../../components/About/AboutSection";
 import Alert from "../../components/Alert";
 import BannerSection from "../../components/Banner/BannerSection";
 import React from "react";

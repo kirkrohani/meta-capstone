@@ -1,5 +1,4 @@
 #specials-section {
-  min-height: 1000px;
   display: flex;
   flex-direction:  column;
   width: 68%;
@@ -78,6 +77,25 @@
   font-family: 'Meraki Text';
   font-size: 20pt;
   font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  #specials-section {
+    width: 100%;
+    margin: 20% 0 0 0;
+    padding: 50px 0;
+  }
+
+  #specials-section .specialsBottomDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+  }
+
+  #specials-section .specialsBottomDiv .special {
+    max-width: 350px;
+    margin: 25px auto;
+  }
 }
 
 @media (max-width: 480px) {
