@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router-dom";
 
 import { AlertProvider } from "./context/alertContext";
 import { ChakraProvider } from "@chakra-ui/react";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import HomePage from "./pages/Home/HomePage";
 import LoginPage from './pages/LoginPage'
