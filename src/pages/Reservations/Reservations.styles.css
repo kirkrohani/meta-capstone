@@ -1,0 +1,16 @@
+.reservations-page {
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#reservations-form {
+  display: grid;
+  max-width: 400px;
+  gap: 20px;
+}
+
+/*
+style="display: grid; max-width: 200px; gap: 20px"
+*/
