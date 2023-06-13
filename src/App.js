@@ -1,7 +1,6 @@
 import './index.css';
 
 import { Route, Routes } from "react-router-dom";
-import { useReducer, useState } from 'react';
 
 import { AlertProvider } from "./context/alertContext";
 import { ChakraProvider } from "@chakra-ui/react";
@@ -13,6 +12,7 @@ import MenuPage from './pages/MenuPage';
 import OrderOnlinePage from './pages/OrderOnlinePage'
 import ReservationsPage from './pages/Reservations/ReservationsPage'
 import { bookingsReducer } from './reducers/bookingsReducer';
+import { useReducer } from 'react';
 
 function App() {
   const [state, dispatch] = useReducer(bookingsReducer, {});
