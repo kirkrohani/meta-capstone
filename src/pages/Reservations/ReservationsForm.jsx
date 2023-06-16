@@ -11,6 +11,7 @@ const ReservationsForm = ({bookingSlots, updateBookingSlots}) => {
   const [occassion, setOccassion] = useState('Birthday');
   const availableBookingSlots = (bookingSlots && bookingSlots[date]) || availableTimes;
 
+  
   const dateChange = (e) => {
     setDate(e.target.value);
   }
