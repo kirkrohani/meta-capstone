@@ -5,9 +5,7 @@ const getAvailableTimes = (date) => {
 
 let availableTimes = getAvailableTimes();
 
-
 function bookingsReducer(state, action) {
-  console.log('inside bookingsReducer w/action: ', state, action);
   const selectedDate = action.date;
   availableTimes = getAvailableTimes(selectedDate);
   switch (action.type) {

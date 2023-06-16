@@ -7,7 +7,6 @@ import deliveryImage from '../../images/Dish icon.svg';
 
 const SpecialsSection = () => {
   const imageBaseURL = '../../images/';
-  console.log('DATA: ', DATA);
   return (
       <section id="specials-section">
         <div className="specialsTopDiv">
@@ -15,9 +14,9 @@ const SpecialsSection = () => {
           <Button name="Online Menu" value="Online Menu" style="standardButton" />
         </div>
         <div className="specialsBottomDiv">
-        {DATA.map(specialItem => {
+        {DATA.map( (specialItem, index) => {
           return (
-            <div className="special">
+            <div key={specialItem.name + index}  className="special">
               <img className='specialImage' src={require('../../images/' + specialItem.imageURL)} alt="special iamge" />
               <div className="line1">
                 <p className='specialName'>{specialItem.name}</p>

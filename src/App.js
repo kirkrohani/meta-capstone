@@ -1,6 +1,7 @@
 import './index.css';
 
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
+import { useEffect, useReducer, useState } from 'react';
 
 import { AlertProvider } from "./context/alertContext";
 import { ChakraProvider } from "@chakra-ui/react";
@@ -10,12 +11,25 @@ import HomePage from "./pages/Home/HomePage";
 import LoginPage from './pages/LoginPage'
 import MenuPage from './pages/MenuPage';
 import OrderOnlinePage from './pages/OrderOnlinePage'
+import ReservationConfirmed from './pages/Reservations/ReservationConfirmed';
 import ReservationsPage from './pages/Reservations/ReservationsPage'
 import { bookingsReducer } from './reducers/bookingsReducer';
-import { useReducer } from 'react';
 
 function App() {
   const [state, dispatch] = useReducer(bookingsReducer, {});
+  const [bookingConfirmed, setBookingConfirmed] = useState(false);
+  const navigate = useNavigate();
+  const submitBookingForm = (formData) => {
+    if (submitAPI(formData)) {
+      setBookingConfirmed(true);
+    }
+  }
+
+  useEffect(() => {
+     if (bookingConfirmed) {
+      navigate("/reservationConfirmed");
+    }
+  }, [bookingConfirmed]);
 
   return (
     <ChakraProvider>
@@ -25,9 +39,14 @@ function App() {
           <Routes>
             <Route path="/"  element={<HomePage />} />
             <Route path="/menu" element={<MenuPage />} />
-            <Route path="/reservations" element={<ReservationsPage bookingSlots={state} updateBookingSlots={dispatch} />} />
+            <Route path="/reservations"
+              element={<ReservationsPage
+                bookingSlots={state}
+                updateBookingSlots={dispatch}
+                submitBookingForm={submitBookingForm} />} />
             <Route path="/order-online" element={<OrderOnlinePage />} />
-            <Route path="/login"  element={<LoginPage />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/reservationConfirmed"  element={<ReservationConfirmed />} />
           </Routes>
           <Footer />
         </main>

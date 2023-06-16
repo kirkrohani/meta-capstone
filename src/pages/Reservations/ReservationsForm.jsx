@@ -4,14 +4,13 @@ import React, { useState } from "react";
 
 import { availableTimes } from '../../reducers/bookingsReducer';
 
-const ReservationsForm = ({bookingSlots, updateBookingSlots}) => {
+const ReservationsForm = ({bookingSlots, updateBookingSlots, submitBookingForm}) => {
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');
   const [numberOfGuests, setNumberOfGuests] = useState(1);
   const [occassion, setOccassion] = useState('Birthday');
   const availableBookingSlots = (bookingSlots && bookingSlots[date]) || availableTimes;
 
-  
   const dateChange = (e) => {
     setDate(e.target.value);
   }
@@ -27,23 +26,16 @@ const ReservationsForm = ({bookingSlots, updateBookingSlots}) => {
   const occassionChange = (e) => {
     setOccassion(e.target.value);
   }
-
-  const resetToDefaults = () => {
-    setDate('');
-    setTime('');
-    setNumberOfGuests(1);
-    setOccassion('Birtday');
-  }
-
+  
   const submitReservation = (e) => {
     e.preventDefault();
-    console.log('submitting: ', date, time, numberOfGuests, occassion);
-    updateBookingSlots({
+    const formData = {
       type: 'create-reservation',
       date: date,
       time: time
-    });
-    resetToDefaults();
+    };
+    updateBookingSlots(formData);
+    submitBookingForm(formData);
   }
 
   return (
