@@ -3,6 +3,7 @@
   background-color: #F4CE14;
   color: #000000;
   font-weight: bold;
+  font-family: 'Karla';
   width: 250px;
   height: 50px;
   border-radius: 15rem;
@@ -13,6 +14,18 @@
     border: solid 1px #FFFFFF;
     color: #FFFFFF;
 }
+
+.disabledButton {
+  border: solid 1px #242625;
+  background-color: #242625;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-family: 'Karla';
+  width: 250px;
+  height: 50px;
+  border-radius: 15rem;
+}
+
 
 
 
