@@ -26,7 +26,8 @@ function App() {
   }
 
   useEffect(() => {
-     if (bookingConfirmed) {
+    if (bookingConfirmed) {
+      setBookingConfirmed(false);
       navigate("/reservationConfirmed");
     }
   }, [bookingConfirmed]);
