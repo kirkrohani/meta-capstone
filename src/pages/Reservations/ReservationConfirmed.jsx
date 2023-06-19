@@ -1,6 +1,15 @@
+import './Reservations.styles.css';
+
+import { Heading } from "@chakra-ui/react";
+import React from "react";
+
 const ReservationConfirmed = () => {
   return (
-    <h1>Reservation Successful!</h1>
+    <div id="reservation-confirmed-page">
+      <Heading as="h1" className="heading">
+        Reservation booking successful!
+      </Heading>
+    </div>
   )
 }
 
