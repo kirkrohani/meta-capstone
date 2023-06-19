@@ -1,10 +1,12 @@
+import './Menu.styles.css';
+
 import { Heading } from "@chakra-ui/react";
 import React from "react";
 
 const MenuPage = () => {
   return (
-    <div>
-      <Heading as="h1" id="menu-page">
+    <div id="menu-page">
+      <Heading as="h1" className="heading">
         Menu Page
       </Heading>
     </div>

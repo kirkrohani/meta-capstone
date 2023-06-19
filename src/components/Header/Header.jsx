@@ -54,7 +54,9 @@ const Header = () => {
   return (
     <header>
       <div className="logo">
-        <img src={logo} alt="little lemon logo" width="250" />
+        <Link to="/" alt="Link to Home Page">
+          <img src={logo} alt="little lemon logo" width="250" />
+        </Link>
       </div>
       <div className="navigation">
         <nav>

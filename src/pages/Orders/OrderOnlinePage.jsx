@@ -1,10 +1,12 @@
+import './Orders.styles.css';
+
 import { Heading } from "@chakra-ui/react";
 import React from "react";
 
 const OrderOnlinePage = () => {
   return (
-    <div>
-      <Heading as="h1" id="order-online-page">
+    <div id="orders-page">
+      <Heading as="h1" className="heading">
         Order Online Page
       </Heading>
     </div>

@@ -15,7 +15,8 @@ const SpecialsSection = () => {
           name="Online Menu"
           value="Online Menu"
           style="standardButton"
-          label="Online Menu Button" />
+          label="Online Menu Button"
+          to="/menu" />
         </div>
         <div className="specialsBottomDiv">
         {DATA.map( (specialItem, index) => {

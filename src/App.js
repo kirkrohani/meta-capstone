@@ -8,9 +8,9 @@ import { ChakraProvider } from "@chakra-ui/react";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import HomePage from "./pages/Home/HomePage";
-import LoginPage from './pages/LoginPage'
-import MenuPage from './pages/MenuPage';
-import OrderOnlinePage from './pages/OrderOnlinePage'
+import LoginPage from './pages/Login/LoginPage'
+import MenuPage from './pages/Menu/MenuPage';
+import OrderOnlinePage from './pages/Orders/OrderOnlinePage'
 import ReservationConfirmed from './pages/Reservations/ReservationConfirmed';
 import ReservationsPage from './pages/Reservations/ReservationsPage'
 import { bookingsReducer } from './reducers/bookingsReducer';
