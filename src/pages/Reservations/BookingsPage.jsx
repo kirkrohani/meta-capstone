@@ -1,10 +1,10 @@
-import './Reservations.styles.css';
+import './Bookings.styles.css';
 
 import { Heading } from "@chakra-ui/react";
 import React from "react";
-import ReservationsForm from "./ReservationsForm";
+import ReservationsForm from "./BookingsForm";
 
-const ReservationsPage = ({ bookingSlots, updateBookingSlots, submitBookingForm }) => {
+const BookingsPage = ({ bookingSlots, updateBookingSlots, submitBookingForm }) => {
   return (
     <div id="reservations-page">
       <Heading as="h1" className="heading">
@@ -18,4 +18,4 @@ const ReservationsPage = ({ bookingSlots, updateBookingSlots, submitBookingForm 
   )
 }
 
-export default ReservationsPage;
+export default BookingsPage;

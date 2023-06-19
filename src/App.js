@@ -11,8 +11,8 @@ import HomePage from "./pages/Home/HomePage";
 import LoginPage from './pages/Login/LoginPage'
 import MenuPage from './pages/Menu/MenuPage';
 import OrderOnlinePage from './pages/Orders/OrderOnlinePage'
-import ReservationConfirmed from './pages/Reservations/ReservationConfirmed';
-import ReservationsPage from './pages/Reservations/ReservationsPage'
+import ReservationConfirmed from './pages/Reservations/BookingConfirmed';
+import ReservationsPage from './pages/Reservations/BookingsPage'
 import { bookingsReducer } from './reducers/bookingsReducer';
 
 function App() {

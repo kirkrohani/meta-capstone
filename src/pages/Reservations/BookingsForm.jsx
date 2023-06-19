@@ -1,11 +1,11 @@
-import './Reservations.styles.css';
+import './Bookings.styles.css';
 
 import React, { useState } from "react";
 
 import Button from '../../components/Button/Button';
 import { availableTimes } from '../../reducers/bookingsReducer';
 
-const ReservationsForm = ({bookingSlots, updateBookingSlots, submitBookingForm}) => {
+const BookingsForm = ({bookingSlots, updateBookingSlots, submitBookingForm}) => {
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');
   const [numberOfGuests, setNumberOfGuests] = useState(1);
@@ -88,4 +88,4 @@ const ReservationsForm = ({bookingSlots, updateBookingSlots, submitBookingForm})
   );
 }
 
-export default ReservationsForm;
+export default BookingsForm;
