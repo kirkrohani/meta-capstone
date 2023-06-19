@@ -126,7 +126,8 @@ const LandingSection = () => {
                 colorScheme="purple"
                 width="full"
                 isLoading={isLoading}
-                loadingText='Submitting'>
+                loadingText='Submitting'
+                label="Submit Contact">
                 Submit
               </Button>
             </VStack>

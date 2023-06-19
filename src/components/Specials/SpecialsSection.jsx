@@ -11,7 +11,11 @@ const SpecialsSection = () => {
       <section id="specials-section">
         <div className="specialsTopDiv">
           <h1>This Weeks Specials!</h1>  
-          <Button name="Online Menu" value="Online Menu" style="standardButton" />
+        <Button
+          name="Online Menu"
+          value="Online Menu"
+          style="standardButton"
+          label="Online Menu Button" />
         </div>
         <div className="specialsBottomDiv">
         {DATA.map( (specialItem, index) => {

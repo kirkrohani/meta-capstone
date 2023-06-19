@@ -1,6 +1,5 @@
 import './Testimonials.styles.css';
 
-import Button  from '../Button/Button';
 import DATA from '../../data/testimonials-data';
 import React from "react";
 import deliveryImage from '../../images/Dish icon.svg';

@@ -67,7 +67,8 @@ const ReservationsForm = ({bookingSlots, updateBookingSlots, submitBookingForm})
         value="Book Now"
         type="submit"
         style={allInputsReceived() ? "standardButton" : "disabledButton"}
-        data-testid="book-now-button" />
+        data-testid="book-now-button"
+        label="Book Now Button"/>
 
       {/* <input type="submit" value="Book Now" data-testid="book-now-button" /> */}
     </form>

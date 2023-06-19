@@ -12,7 +12,11 @@ const BannerSection = () => (
         <h1>Little Lemon</h1>
         <h2>Chicago</h2>
         <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-        <Button name="Reserve a Table" value="Reserve a Table" style="standardButton" />
+      <Button
+        name="Reserve a Table"
+        value="Reserve a Table"
+        style="standardButton"
+        label="Reserve A Table Button"/>
       </div>
     <div className="banner-rightside">
       <img src={restaurantFood} alt="restaurant food" />
