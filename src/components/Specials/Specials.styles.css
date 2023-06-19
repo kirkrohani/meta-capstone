@@ -22,7 +22,7 @@
 #specials-section .specialsBottomDiv .special {
   border-radius: 3rem;
   min-height: 750px;
-  max-width: 325px;
+  width: 325px;
   border: solid 1px black;
   background-color: #EDEFEE;
 }
@@ -31,7 +31,7 @@
   border-top-left-radius: 3rem;
   border-top-right-radius: 3rem;
   width: 100%;
-  max-height: 282px;
+  height: 282px;
 }
 
 #specials-section .specialsBottomDiv .special .line1 {
