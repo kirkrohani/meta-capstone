@@ -9,7 +9,7 @@ const DATA = [
     name: 'Bruschetta',
     price: '$5.99',
     description: 'Our Bruschetta is made from grilled bread that has been smeared with carlic and seasoned with salt and olive oil.',
-    imageURL: 'bruchetta.svg'
+    imageURL: 'restauranfood.jpg'
   },
   {
     name: 'Lemon Dessert',

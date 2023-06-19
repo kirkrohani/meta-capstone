@@ -16,5 +16,8 @@ code {
     monospace;
 }
 
-#app {
+@media(max-width: 480px) {
+  #app {
+    padding: 2%;
+  }
 }

@@ -1,6 +1,7 @@
 #footer-section {
   display: flex;
   flex-direction: row;
+  background-color: #495E57;
 }
 
 /*FOOTER LEFT SIDE*/
@@ -19,6 +20,7 @@
 #footer-section .footer-leftside .footer-doormat-navigation {
   max-width: 100px;
   margin: 5%;
+  color: #FFFFFF;
 }
 
 #footer-section .footer-leftside .footer-doormat-navigation ol li {
@@ -26,11 +28,14 @@
   font-size: 12pt;
   line-height: 1.5;
   font-family: Karla;
+
 }
 
 #footer-section .footer-leftside .footer-doormat-navigation ol li a {
   padding: 0;
   text-align:start;
+      color: #FFFFFF;
+
 }
 
 #footer-section .footer-leftside .footer-doormat-navigation ol li:first-child {
@@ -45,6 +50,8 @@
   flex-direction: row;
   justify-content:flex-start;
   margin: 2.5% 0;
+      color: #FFFFFF;
+
 }
 
 #footer-section .footer-rightside .footer-contact ol li {
