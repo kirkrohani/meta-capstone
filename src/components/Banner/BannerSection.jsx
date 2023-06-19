@@ -16,7 +16,9 @@ const BannerSection = () => (
         name="Reserve a Table"
         value="Reserve a Table"
         style="standardButton"
-        label="Reserve A Table Button"/>
+        label="Reserve A Table Button"
+        to="/reservations"/>
+      {/* <Link to="/reservations">Reserve A Table</Link> */}
       </div>
     <div className="banner-rightside">
       <img src={restaurantFood} alt="restaurant food" />
